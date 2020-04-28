@@ -18,9 +18,10 @@ import Select from 'react-select';
 import { useApolloClient } from '@apollo/react-hooks';
 import { Grid, InputLabel } from '@material-ui/core';
 
-import { HURUmapChart } from '@hurumap-ui/core';
-
+// import { HURUmapChart } from '@hurumap-ui/core';
 import { select } from '@wordpress/data';
+import HURUmapChart from '../HURUmapChart';
+
 import useGeos from '../hooks/useGeos';
 import getPostLanguage from '../utils/getPostLanguage';
 

@@ -1449,6 +1449,15 @@
     shortid "^2.2.15"
     victory "^34.1.1"
 
+"@hurumap-ui/charts@^0.3.5-alpha.14":
+  version "0.3.5-alpha.14"
+  resolved "https://registry.yarnpkg.com/@hurumap-ui/charts/-/charts-0.3.5-alpha.14.tgz#a8a918dad187e2f94bc0b8cbdeafd6b1867c9744"
+  integrity sha512-kRJLbs8rbwEdwwRpU1AuloU6xpf5gS3ZUQl1i5GIVJ+reVowKE2cigItGwgrC0SrgqUKVvz+de1GKEcekiUPlw==
+  dependencies:
+    prop-types "^15.7.2"
+    shortid "^2.2.15"
+    victory "^34.1.1"
+
 "@hurumap-ui/content@^0.3.5-alpha.12":
   version "0.3.5-alpha.12"
   resolved "https://registry.yarnpkg.com/@hurumap-ui/content/-/content-0.3.5-alpha.12.tgz#554bb1b4ab7a65b4a2a55519e0bc7c13f4127790"

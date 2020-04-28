@@ -41,7 +41,7 @@ export default createTheme({
       }
     },
     bar: {
-      width: 350,
+      width: 200,
       height: 350,
       barWidth: 30,
       offset: 45,
