@@ -34,17 +34,17 @@ class HURUmap {
     }
     
     function setup_admin_menu() {
-        // add_menu_page('HURUmap Data', 'HURUmap Data', 'manage_options', 'hurumap-data', array($this, 'hurumap_data_root'));
+        // add_menu_page('HURUmap Data', 'HURUmap Data', 'manage_options', 'hurumap', array($this, 'hurumap_data_root'));
         // Vars.
         $slug = 'edit.php?post_type=hurumap-visual';
-        $cap = acf_get_setting('capability');
+        $cap = 'manage_options';
         
         // Add menu items.
-        add_menu_page( __("HURUmap",'hurumap-data'), __("HURUmap",'hurumap-data'), $cap, $slug, false, 'dashicons-welcome-widgets-menus');
-        add_submenu_page( $slug, __('Visuals','hurumap-data'), __('Visuals','hurumap-data'), $cap, $slug );
-        add_submenu_page( $slug, __('Sections','hurumap-data'), __('Sections','hurumap-data'), $cap, 'edit.php?post_type=hurumap-section' );
-        add_submenu_page( $slug, __('New Visual','hurumap-data'), __('New Visual','hurumap-data'), $cap, 'post-new.php?post_type=hurumap-visual');
-        add_submenu_page( $slug, __('New Section','hurumap-data'), __('New Section','hurumap-data'), $cap, 'post-new.php?post_type=hurumap-section' );
+        add_menu_page( __("HURUmap",'hurumap'), __("HURUmap",'hurumap'), $cap, $slug, false, 'dashicons-welcome-widgets-menus');
+        add_submenu_page( $slug, __('Visuals','hurumap'), __('Visuals','hurumap'), $cap, $slug );
+        add_submenu_page( $slug, __('Sections','hurumap'), __('Sections','hurumap'), $cap, 'edit.php?post_type=hurumap-section' );
+        add_submenu_page( $slug, __('New Visual','hurumap'), __('New Visual','hurumap'), $cap, 'post-new.php?post_type=hurumap-visual');
+        add_submenu_page( $slug, __('New Section','hurumap'), __('New Section','hurumap'), $cap, 'post-new.php?post_type=hurumap-section' );
 
         // 
         add_action( 'admin_head', array($this, 'add_custom_sync_topics_button') );
@@ -256,8 +256,8 @@ class HURUmap {
         return array(
             'cb' => $columns['cb'], 
             'title' => $columns['title'], 
-            'visual_type' => __( 'Visual Type', 'hurumap-data' ), 
-            'in_topics' => __( 'Visual Used In Topics', 'hurumap-data' ), 
+            'visual_type' => __( 'Visual Type', 'hurumap' ), 
+            'in_topics' => __( 'Visual Used In Topics', 'hurumap' ), 
             'date' => $columns['date']
         );
     }
