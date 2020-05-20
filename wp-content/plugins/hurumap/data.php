@@ -17,20 +17,18 @@ if (!class_exists('HURUmapData')) :
 
         function register_post_types()
         {
-            $cap = acf_get_setting('capability');
-
             register_post_type('hurumap-visual', array(
                 'labels'            => array(
-                    'name'                    => __('Visual', 'hurumap-data'),
-                    'singular_name'            => __('Visual', 'hurumap-data'),
-                    'add_new'                => __('Add New', 'hurumap-data'),
-                    'add_new_item'            => __('Add New Visual', 'hurumap-data'),
-                    'edit_item'                => __('Edit Visual', 'hurumap-data'),
-                    'new_item'                => __('New Visual', 'hurumap-data'),
-                    'view_item'                => __('View Visual', 'hurumap-data'),
-                    'search_items'            => __('Search Visuals', 'hurumap-data'),
-                    'not_found'                => __('No Visuals found', 'hurumap-data'),
-                    'not_found_in_trash'    => __('No Visuals found in Trash', 'hurumap-data'),
+                    'name'                    => __('Visual', 'hurumap'),
+                    'singular_name'            => __('Visual', 'hurumap'),
+                    'add_new'                => __('Add New', 'hurumap'),
+                    'add_new_item'            => __('Add New Visual', 'hurumap'),
+                    'edit_item'                => __('Edit Visual', 'hurumap'),
+                    'new_item'                => __('New Visual', 'hurumap'),
+                    'view_item'                => __('View Visual', 'hurumap'),
+                    'search_items'            => __('Search Visuals', 'hurumap'),
+                    'not_found'                => __('No Visuals found', 'hurumap'),
+                    'not_found_in_trash'    => __('No Visuals found in Trash', 'hurumap'),
                 ),
                 'public'            => true,
                 'hierarchical'        => true,
@@ -38,12 +36,6 @@ if (!class_exists('HURUmapData')) :
                 'show_in_menu'        => false,
                 '_builtin'            => false,
                 'capability_type'    => 'post',
-                'capabilities'        => array(
-                    'edit_post'            => $cap,
-                    'delete_post'        => $cap,
-                    'edit_posts'        => $cap,
-                    'delete_posts'        => $cap,
-                ),
                 'supports'             => array('title'),
                 'rewrite'            => false,
                 'query_var'            => false,
@@ -51,16 +43,16 @@ if (!class_exists('HURUmapData')) :
 
             register_post_type('hurumap-section', array(
                 'labels'            => array(
-                    'name'                    => __('Visuals Section', 'acf'),
-                    'singular_name'            => __('Visuals Section', 'acf'),
-                    'add_new'                => __('Add New', 'acf'),
-                    'add_new_item'            => __('Add New Visuals Section', 'acf'),
-                    'edit_item'                => __('Edit Visuals Section', 'acf'),
-                    'new_item'                => __('New VisualsSection', 'acf'),
-                    'view_item'                => __('View Visuals Section', 'acf'),
-                    'search_items'            => __('Search Visual Sections', 'acf'),
-                    'not_found'                => __('No Visual Sections found', 'acf'),
-                    'not_found_in_trash'    => __('No Visual Sections found in Trash', 'acf'),
+                    'name'                    => __('Visuals Section', 'hurumap'),
+                    'singular_name'            => __('Visuals Section', 'hurumap'),
+                    'add_new'                => __('Add New', 'hurumap'),
+                    'add_new_item'            => __('Add New Visuals Section', 'hurumap'),
+                    'edit_item'                => __('Edit Visuals Section', 'hurumap'),
+                    'new_item'                => __('New VisualsSection', 'hurumap'),
+                    'view_item'                => __('View Visuals Section', 'hurumap'),
+                    'search_items'            => __('Search Visual Sections', 'hurumap'),
+                    'not_found'                => __('No Visual Sections found', 'hurumap'),
+                    'not_found_in_trash'    => __('No Visual Sections found in Trash', 'hurumap'),
                 ),
                 'public'            => false,
                 'hierarchical'        => true,
@@ -68,12 +60,6 @@ if (!class_exists('HURUmapData')) :
                 'show_in_menu'        => false,
                 '_builtin'            => false,
                 'capability_type'    => 'post',
-                'capabilities'        => array(
-                    'edit_post'            => $cap,
-                    'delete_post'        => $cap,
-                    'edit_posts'        => $cap,
-                    'delete_posts'        => $cap,
-                ),
                 'supports'             => array('title'),
                 'rewrite'            => false,
                 'query_var'            => false,
