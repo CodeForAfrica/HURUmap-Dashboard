@@ -30,6 +30,7 @@ export default createTheme({
       width: 350,
       height: 350,
       colorScale: ['#29a87c', '#a0d9b3', '#004494', '#4abc70'],
+      minDomain: { y: 0 },
       style: {
         data: {
           strokeWidth: 4
