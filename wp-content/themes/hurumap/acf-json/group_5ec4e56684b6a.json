@@ -58,7 +58,36 @@
                 "operator": "==",
                 "value": "insights-resources"
             }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "analysis-articles"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "analysis-fact-checks"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "analysis-resources"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "promises"
+            }
         ]
+
     ],
     "menu_order": 0,
     "position": "normal",
@@ -68,5 +97,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1591857997
+    "modified": 1613545172
 }
