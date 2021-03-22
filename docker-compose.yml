@@ -46,7 +46,6 @@ services:
     volumes:
       - ./wp-content:/var/www/html/wp-content
       - ./.htaccess:/var/www/html/.htaccess
-      - ./.env:/var/www/html/.env
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_NAME: hurumap
