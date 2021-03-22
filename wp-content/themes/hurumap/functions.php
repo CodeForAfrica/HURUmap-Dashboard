@@ -209,6 +209,10 @@ add_filter( 'acf/rest_api/page/get_fields', function( $data, $request ) {
 function custom_index_name() {
     return 'outbreak';
 }
+
+add_filter( 'ep_index_name', 'custom_index_name');
+
+
 function get_base_url() {
     $value = get_field( 'frontend_base_url','hurumap-site' );
     if ($value ){
@@ -228,15 +232,19 @@ function get_token(){
     return $data["token"]; 
 }
 
-add_filter( 'ep_index_name', 'custom_index_name');
+function set_expiry(){
+    return time() + 30;// 30 seconds
+}
+
+add_filter( 'jwt_auth_expire', 'set_expiry');
 
 //  Add custom preview page url link
 function custom_preview_page_link($link) {
     $base_url = get_base_url( );
-    $token = get_token();
     if (empty($base_url)){
         return $link;
     }
+    $token = get_token();
     $parentId = wp_get_post_parent_id( get_the_id());
     $post = get_post( $parentId );
     $latest_revision = array_shift(wp_get_post_revisions($parentId));
