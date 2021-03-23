@@ -227,6 +227,9 @@ function get_token(){
     $request = new WP_REST_Request( 'POST', '/jwt-auth/v1/token' );
     $request->set_body_params( [ 'username' => constant("WP_DEFAULT_USERNAME"),"password"=>constant("WP_DEFAULT_PASSWORD") ] );
     $response = rest_do_request( $request );
+    if ( $response->is_error() ){
+        return;
+    }
     $server = rest_get_server();
     $data = $server->response_to_data( $response, false );
     return $data["token"]; 
