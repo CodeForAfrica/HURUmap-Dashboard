@@ -1,0 +1,601 @@
+{
+  "key": "group_60645582c876c",
+  "title": "Promise Act Now",
+  "fields": [
+    {
+      "key": "field_606455b57a3cf",
+      "label": "Promise Act Now",
+      "name": "promise_act_now",
+      "type": "group",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_60646af971374",
+          "label": "Connect",
+          "name": "connect",
+          "type": "group",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "layout": "block",
+          "sub_fields": [
+            {
+              "key": "field_60646b0571375",
+              "label": "Connect Title",
+              "name": "connect_title",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Connect!",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646b1f71376",
+              "label": "Connect description",
+              "name": "connect_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Connect with others who care about this promise",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646b2b71377",
+              "label": "Connect Button",
+              "name": "connect_button",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "CTA TBC",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            }
+          ]
+        },
+        {
+          "key": "field_60646b462b893",
+          "label": "Petition",
+          "name": "petition",
+          "type": "group",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "layout": "block",
+          "sub_fields": [
+            {
+              "key": "field_60646b612b894",
+              "label": "Petition Title",
+              "name": "petition_title",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Petition",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646b822b895",
+              "label": "Petition description",
+              "name": "petition_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Not happy with progress or promise? Start or join a petition!",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            }
+          ]
+        },
+        {
+          "key": "field_606469f3480d6",
+          "label": "Follow",
+          "name": "follow",
+          "type": "group",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "layout": "block",
+          "sub_fields": [
+            {
+              "key": "field_606455f37a3d0",
+              "label": "Follow Title",
+              "name": "follow_title",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Follow",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_606456407a3d1",
+              "label": "Follow Description",
+              "name": "follow_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Get alerts whenever there is a development on the promise.",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_6064566c7a3d2",
+              "label": "Follow Button",
+              "name": "follow_button",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Submit",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            }
+          ]
+        },
+        {
+          "key": "field_60646bcb01468",
+          "label": "Update",
+          "name": "update",
+          "type": "group",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "layout": "block",
+          "sub_fields": [
+            {
+              "key": "field_60646bd801469",
+              "label": "Update Title",
+              "name": "update_title",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Update a petition",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646c0b0146a",
+              "label": "Update description",
+              "name": "update_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Let us know of any recent change in this petition that you are aware of. A team of experts will review and update the petition.",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646c320146b",
+              "label": "What Label",
+              "name": "what_label",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "WHAT'S YOUR UPDATE?*",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646c9d0146c",
+              "label": "What Label Description",
+              "name": "what_label_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Explain what the developments are, so that we understand how to update the promise.",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646cc10146d",
+              "label": "Who Label",
+              "name": "who_label",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "WHO ELSE CAN CONFIRM YOUR UPDATE?",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646cd70146e",
+              "label": "Who Label Description",
+              "name": "who_label_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Do you have any witnesses or are there any other people we can confirm your update with?",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646cee0146f",
+              "label": "When Label",
+              "name": "when_label",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "WHEN DID THE UPDATE HAPPEN?*",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646d0401470",
+              "label": "When Label Description",
+              "name": "when_label_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Tell us how recently the development happened, so we understand the timelines.",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646d1d01471",
+              "label": "Contact Label",
+              "name": "contact_label",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "HOW DO WE CONTACT YOU?*",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646d3301472",
+              "label": "Contact Label Description",
+              "name": "contact_label_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "What is your WhatsApp number or email, so we can confirm the update and keep you informed?",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646d5401473",
+              "label": "Evidence Label",
+              "name": "evidence_label",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "WHAT EVIDENCE DO YOU HAVE?",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646d6c01474",
+              "label": "Evidence Label Description",
+              "name": "evidence_label_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Upload photos, videos, audio recordings or documents to support your update",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646dc401476",
+              "label": "Image Upload Description",
+              "name": "image_upload_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "CLICK TO SELECT IMAGE TO UPLOAD",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646da701475",
+              "label": "Mandatory Text",
+              "name": "mandatory_text",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "* Mandatory fields",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646df401477",
+              "label": "Submit Text",
+              "name": "submit_text",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Submit",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            }
+          ]
+        },
+        {
+          "key": "field_60646e0ebb590",
+          "label": "Share",
+          "name": "share",
+          "type": "group",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "layout": "block",
+          "sub_fields": [
+            {
+              "key": "field_60646e1bbb591",
+              "label": "Share Title",
+              "name": "share_title",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "SHARE",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_60646e3ebb592",
+              "label": "Share Description",
+              "name": "share_description",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Help mobilise your community by sharing this promise on social media.",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page",
+        "operator": "==",
+        "value": "promises"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": 1,
+  "description": "",
+  "modified": 1617194993
+}
