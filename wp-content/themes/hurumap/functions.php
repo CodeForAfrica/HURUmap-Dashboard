@@ -235,8 +235,19 @@ function get_token(){
     return $data["token"]; 
 }
 
+function get_post_resource($id ,$post_type){
+    $request = new WP_REST_Request( 'GET', '/wp/v2/'.$post_type.'/'.$id  );
+    $response = rest_do_request( $request );
+    if ( $response->is_error() ){
+        return $response;
+    }
+    $server = rest_get_server();
+    $data = $server->response_to_data( $response, false );
+    return $data; 
+}
+
 function set_expiry(){
-    return time() + 30;// 30 seconds
+    return time() + 300;// 5 minutes
 }
 
 add_filter( 'jwt_auth_expire', 'set_expiry');
@@ -265,6 +276,7 @@ add_filter( 'post_link', 'custom_preview_page_link', 10 );
 add_filter( 'rest_prepare_revision', function( $response, $post) {
     $data = $response->get_data();
     $data['acf'] = get_fields( $post->ID );
+    $data['author'] = get_post_resource( $data["author"] ,'users');
     return rest_ensure_response( $data );
 }, 10, 2 );
 
@@ -286,3 +298,27 @@ add_filter('acf/settings/load_json', function($paths) {
     }
     return $paths;
 });
+
+/**
+ * Redirect to thumbnail by Id !
+ *
+ * @param array $data Options for the function.
+ */
+function redirect_to_media_by_id( $data ) {
+    $media = get_post_resource( $data["id"] ,'media');
+ 
+  if ( empty( $media ) ) {
+    return null;
+  }elseif( empty($media['id'])){
+    return null;
+}
+  wp_redirect( $media["source_url"] );
+  exit;
+}
+
+add_action( 'rest_api_init', function () {
+    register_rest_route( 'hurumap/v1', '/thumbnail/(?P<id>\d+)', array(
+      'methods' => 'GET',
+      'callback' => 'redirect_to_media_by_id',
+    ) );
+  } );
